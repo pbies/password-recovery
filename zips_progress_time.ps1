@@ -9,7 +9,7 @@ Get-ChildItem "." -Filter *.zip |
 Foreach-Object {
 	$i = 0
 	$sw = [Diagnostics.Stopwatch]::StartNew()
-	Write-Host Processing file: $_
+	Write-Host "Processing file: $_"
 	foreach ($password in $passwords)
 	{
 		& $7ZipPath "t" $_ "-p$password" > $null 2> $null

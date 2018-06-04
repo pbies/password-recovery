@@ -11,13 +11,13 @@ Get-ChildItem "." -Filter *.rar |
 Foreach-Object {
 	$i = 0
 	$sw = [Diagnostics.Stopwatch]::StartNew()
-	Write-Host Processing file: $_
+	Write-Host "Processing file: $_"
 	foreach ($password in $passwords)
 	{
 		& "$rar" 't' '/inul' "$_" "/p$password"
 		if ($?)
 		{
-			Write-Host "Valid password:"$password
+			Write-Host "Valid password: $password"
 			[console]::beep(500,300)
 			$sw.Stop()
 			Write-Host time = $sw.Elapsed.ToString()
