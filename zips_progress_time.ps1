@@ -16,6 +16,7 @@ Foreach-Object {
 		if ($?)
 		{
 			Write-Host "Valid password: "$password
+			Write-Output "$_`:$password" >> potfile.txt
 			[console]::beep(500,300)
 			$sw.Stop()
 			Write-Host time = $sw.Elapsed.ToString()

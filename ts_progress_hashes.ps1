@@ -93,6 +93,7 @@ $file = "container.tc"
 
 function suc($p) {
 	Write-Host "Valid password: $p"
+	Write-Output "$_`:$password" >> potfile.txt
 	[console]::beep(500,300)
 	pause
 	exit

@@ -92,6 +92,7 @@ $7ZipPath = "C:\Program Files\7-Zip\7z.exe"
 
 function suc($p) {
 	Write-Host "Valid password: $p"
+	Write-Output "$_`:$password" >> potfile.txt
 	[console]::beep(500,300)
 	pause
 	exit
