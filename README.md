@@ -12,11 +12,11 @@ Windows, Powershell, list of passwords, containers.
 
 ### Installing
 
-Download is enough.
+Download is enough. You need to run files via Powershell.
 
 ## Running the tests
 
-Provided are sample files: passwords.txt, test.rar, test.zip.
+Provided are sample files: passwords.txt, test.rar, test.zip, container.tc.
 
 ### Break down into end to end tests
 
