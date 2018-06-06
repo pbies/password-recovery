@@ -110,6 +110,13 @@ function test($p) {
 	}
 }
 
+if (!(Test-Path $file -PathType Leaf))
+{
+	Write-Host "File $file is missing!"
+	pause
+	exit 1
+}
+
 $i = 0
 Write-Host "Processing file: $file"
 If (Test-Path z:\)

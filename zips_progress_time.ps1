@@ -5,6 +5,13 @@ $passwords = Get-Content "passwords.txt"
 $count = $passwords.Length
 $7ZipPath = "C:\Program Files\7-Zip\7z.exe"
 
+$files=0
+Get-ChildItem "." -Filter *.zip |
+Foreach-Object {
+	$files++
+}
+Write-Host "Files found: $files"
+
 Get-ChildItem "." -Filter *.zip |
 Foreach-Object {
 	$i = 0
@@ -15,7 +22,7 @@ Foreach-Object {
 		& $7ZipPath "t" $_ "-p$password" > $null 2> $null
 		if ($?)
 		{
-			Write-Host "Valid password: "$password
+			Write-Host "Valid password: $password"
 			Write-Output "$_`:$password" >> potfile.txt
 			[console]::beep(500,300)
 			$sw.Stop()

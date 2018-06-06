@@ -7,6 +7,13 @@ $count = $passwords.Length
 # $rar = "c:\Program Files\WinRAR\Rar.exe"
 $rar = "c:\Program Files\WinRAR\UnRAR.exe"
 
+$files=0
+Get-ChildItem "." -Filter *.rar |
+Foreach-Object {
+	$files++
+}
+Write-Host "Files found: $files"
+
 Get-ChildItem "." -Filter *.rar |
 Foreach-Object {
 	$i = 0

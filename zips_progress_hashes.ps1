@@ -98,6 +98,13 @@ function suc($p) {
 	exit
 }
 
+$files=0
+Get-ChildItem "." -Filter *.zip |
+Foreach-Object {
+	$files++
+}
+Write-Host "Files found: $files"
+
 Get-ChildItem "." -Filter *.zip |
 Foreach-Object {
 	$i = 0
