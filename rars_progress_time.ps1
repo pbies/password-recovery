@@ -1,7 +1,16 @@
 clear
 Write-Host `n`n`n`n`n`n`n
 
-$passwords = Get-Content "passwords.txt"
+$pwfile = "passwords.txt"
+
+if (!(Test-Path "$pwfile" -PathType Leaf))
+{
+	Write-Host "File $pwfile is missing!"
+	pause
+	exit 1
+}
+
+$passwords = Get-Content "$pwfile"
 $count = $passwords.Length
 # $rar = "c:\Program Files\WinRAR\WinRAR.exe"
 # $rar = "c:\Program Files\WinRAR\Rar.exe"

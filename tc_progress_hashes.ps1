@@ -86,7 +86,16 @@ function Get-CRC32 {
 clear
 Write-Host `n`n`n`n`n`n`n
 
-$passwords = Get-Content "passwords.txt"
+$pwfile = "passwords.txt"
+
+if (!(Test-Path "$pwfile" -PathType Leaf))
+{
+	Write-Host "File $pwfile is missing!"
+	pause
+	exit 1
+}
+
+$passwords = Get-Content "$pwfile"
 $count = $passwords.Length
 $tc = "c:\Program Files\TrueCrypt\TrueCrypt.exe"
 $file = "container.tc"
