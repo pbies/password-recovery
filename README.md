@@ -1,6 +1,6 @@
 # Password cracking
 
-Scripts to brute-force crack passwords for common containers: zip, rar, TrueCrypt.
+Scripts to dictionary crack passwords for common containers: zip, rar, TrueCrypt.
 
 ## Getting Started
 
