@@ -1,3 +1,4 @@
+# © 2018 Piotr Biesiada
 function Get-CRC32 {
     <#
         .SYNOPSIS
