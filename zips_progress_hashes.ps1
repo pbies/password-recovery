@@ -100,6 +100,13 @@ $passwords = Get-Content "$pwfile"
 $count = $passwords.Length
 $7ZipPath = "C:\Program Files\7-Zip\7z.exe"
 
+if (!(Test-Path "$7ZipPath" -PathType Leaf))
+{
+	Write-Host "File $7ZipPath is missing!"
+	pause
+	exit 1
+}
+
 function suc($p) {
 	Write-Host "Valid password: $p"
 	Write-Output "$_`:$password" >> potfile.txt
@@ -155,7 +162,7 @@ Foreach-Object {
 			suc($password)
 		}
 		$i++
-		Write-Progress -Activity "Testing passwords" -status "$i/$count done" -percentComplete ($i/$count*100)
+		Write-Progress -Activity "Testing passwords" -status "$i/$count done, password: $password" -percentComplete ($i/$count*100)
 	}
 }
 pause

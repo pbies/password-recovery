@@ -101,6 +101,13 @@ $count = $passwords.Length
 $tc = "c:\Program Files\TrueCrypt\TrueCrypt.exe"
 $file = "container.tc"
 
+if (!(Test-Path "$tc" -PathType Leaf))
+{
+	Write-Host "File $tc is missing!"
+	pause
+	exit 1
+}
+
 function suc($p) {
 	Write-Host "Valid password: $p"
 	Write-Output "$file`:$p" >> potfile.txt
@@ -160,6 +167,6 @@ foreach ($password in $passwords)
 	test($hash)
 
 	$i++
-	Write-Progress -Activity "Testing passwords" -status "$i/$count done" -percentComplete ($i/$count*100)
+	Write-Progress -Activity "Testing passwords" -status "$i/$count done, password: $password" -percentComplete ($i/$count*100)
 }
 pause

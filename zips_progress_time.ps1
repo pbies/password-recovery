@@ -15,6 +15,13 @@ $passwords = Get-Content "$pwfile"
 $count = $passwords.Length
 $7ZipPath = "C:\Program Files\7-Zip\7z.exe"
 
+if (!(Test-Path "$7ZipPath" -PathType Leaf))
+{
+	Write-Host "File $7ZipPath is missing!"
+	pause
+	exit 1
+}
+
 $files=0
 Get-ChildItem "." -Filter *.zip |
 Foreach-Object {
@@ -41,7 +48,7 @@ Foreach-Object {
 			exit
 		}
 		$i++
-		Write-Progress -Activity "Testing passwords" -status "$i/$count done" -percentComplete ($i/$count*100)
+		Write-Progress -Activity "Testing passwords" -status "$i/$count done, password: $password" -percentComplete ($i/$count*100)
 	}
 	$sw.Stop()
 	Write-Host time = $sw.Elapsed.ToString()

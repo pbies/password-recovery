@@ -17,6 +17,13 @@ $count = $passwords.Length
 # $rar = "c:\Program Files\WinRAR\Rar.exe"
 $rar = "c:\Program Files\WinRAR\UnRAR.exe"
 
+if (!(Test-Path "$rar" -PathType Leaf))
+{
+	Write-Host "File $rar is missing!"
+	pause
+	exit 1
+}
+
 $files=0
 Get-ChildItem "." -Filter *.rar |
 Foreach-Object {
@@ -43,7 +50,7 @@ Foreach-Object {
 			exit
 		}
 		$i++
-		Write-Progress -Activity "Testing passwords" -status "$i/$count done" -percentComplete ($i/$count*100)
+		Write-Progress -Activity "Testing passwords" -status "$i/$count done, password: $password" -percentComplete ($i/$count*100)
 	}
 	$sw.Stop()
 	Write-Host time = $sw.Elapsed.ToString()
