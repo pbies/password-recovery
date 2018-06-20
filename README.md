@@ -54,4 +54,5 @@ That means you must fulfill these requirements:
 ## Acknowledgments
 
 I would like to thank every person that makes the file-oriented approach better.
+
 [CRC32 code](https://gist.github.com/gravejester)
