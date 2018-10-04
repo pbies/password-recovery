@@ -60,3 +60,5 @@ That means you must fulfill these requirements:
 I would like to thank every person that makes the file-oriented approach better.
 
 [CRC32 code](https://gist.github.com/gravejester)
+
+If you like my work please share your opinion with me!
