@@ -41,7 +41,9 @@ One final version for each script, each specific file for one application.
 ## Authors
 
 * **Piotr Biesiada** - *Initial work*
+
 [github](https://github.com/pbies)
+
 [homepage](https://pbies.net/)
 
 ## License
