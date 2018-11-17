@@ -1,4 +1,4 @@
-# © 2018 Piotr Biesiada
+# (C) 2018 Piotr Biesiada
 clear
 Write-Host `n`n`n`n`n`n`n
 
