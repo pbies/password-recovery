@@ -57,7 +57,7 @@ Password cracking
 	-------
 
 		This project is licensed under the GNU GENERAL PUBLIC LICENSE - see
-		the [LICENSE](LICENSE) file for details.
+		the LICENSE file for details.
 
 		That means you must fulfill these requirements:
 		1. your project have the same license
