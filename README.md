@@ -73,3 +73,5 @@ Password cracking
 		CRC32 code - https://github.com/gravejester
 
 		If you like my work please share your opinion with me!
+
+		ptrbsd gmail
