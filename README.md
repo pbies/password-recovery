@@ -1,64 +1,75 @@
-# Password cracking
+Password cracking
+=================
 
-Scripts to dictionary crack passwords for common containers: zip, rar, TrueCrypt.
+		Scripts to dictionary crack passwords for common containers: zip, rar, TrueCrypt.
 
-## Getting Started
+	Getting Started
+	---------------
 
-Download one of the scripts, get ready with passwords.txt file and a container. For TrueCrypt you are obliged to use "container.tc".
+		Download one of the scripts, get ready with passwords.txt file and a container. For TrueCrypt you are obliged to use "container.tc".
 
-### Prerequisites
+	Prerequisites
+	-------------
 
-Windows, Powershell, list of passwords, containers.
+		Windows, Powershell, list of passwords, containers.
 
-### Installing
+	Installing
+	----------
 
-Download is enough. You need to run files via Powershell.
+		Download is enough. You need to run files via Powershell.
 
-## Running the tests
+	Running the tests
+	-----------------
 
-Provided are sample files: passwords.txt, test.rar, test.zip, container.tc.
+		Provided are sample files: passwords.txt, test.rar, test.zip, container.tc.
 
-### Break down into end to end tests
+	Break down into end to end tests
+	--------------------------------
 
-Surely one of the passwords is valid.
+		Surely one of the passwords is valid.
 
-## Deployment
+	Deployment
+	----------
 
-N/A
+		N/A
 
-## Built With
+	Built With
+	----------
 
-* [Notepad++](https://notepad-plus-plus.org/) - The editor used
+		Sublime Text
 
-## Contributing
+	Contributing
+	------------
 
-Edits are allowed on separate branches.
+		Edits are allowed on separate branches.
 
-## Versioning
+	Versioning
+	----------
 
-One final version for each script, each specific file for one application.
+		One final version for each script, each specific file for one application.
 
-## Authors
+	Authors
+	-------
 
-* **Piotr Biesiada** - *Initial work*
+		Piotr Biesiada - Initial work
 
-[github](https://github.com/pbies)
+	License
+	-------
 
-[homepage](https://pbies.net/)
+		This project is licensed under the GNU GENERAL PUBLIC LICENSE - see
+		the [LICENSE](LICENSE) file for details.
 
-## License
+		That means you must fulfill these requirements:
+		1. your project have the same license
+		2. you mention the original author (me)
+		3. can't use scripts in commercial products if they are not free
+		4. you can freely modify and use this project for personal usage
 
-This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE](LICENSE) file for details.
-That means you must fulfill these requirements:
-1. your project have the same license
-2. you mention the original author (me)
-3. can't use scripts in commercial products if they are not free
-4. you can freely modify and use this project for personal usage
+	Acknowledgments
+	---------------
 
-## Acknowledgments
+		I would like to thank every person that makes the file-oriented approach better.
 
-I would like to thank every person that makes the file-oriented approach better.
+		CRC32 code - https://github.com/gravejester
 
-[CRC32 code](https://github.com/gravejester)
-
-If you like my work please share your opinion with me!
+		If you like my work please share your opinion with me!
