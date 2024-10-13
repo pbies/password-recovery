@@ -6,7 +6,8 @@
 	Getting Started
 	---------------
 
-		Download one of the scripts, get ready with passwords.txt file and a container. For TrueCrypt you are obliged to use "container.tc".
+		Download one of the scripts, get ready with passwords.txt file and a container.
+		For TrueCrypt you are obliged to use "container.tc".
 
 	Prerequisites
 	-------------
